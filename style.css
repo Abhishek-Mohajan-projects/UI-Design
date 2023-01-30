@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.container {
+    height: 500px;
+    width: 300px;
+    box-shadow: 0px 0px 15px #ccc;
+    border-radius: 10px;
+}
+
+.container .img-container {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.img-container .main-img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+
+.img-container .main-img > img {
+    width: 100%;
+}
+
+.img-container  .sub-img {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-container  .sub-img > img {
+    width: 50px;
+    padding: 7px;
+    height: 100%;
+}
+
+.img-container  .sub-img > img:hover {
+    border: 2px solid #04dff0;
+}
+
+.img-container  .sub-img .active {
+    border: 2px solid #04dff0;
+}
+
+.content {
+    padding: 15px;
+    line-height: 15px;
+    font-family: verdana;
+    color: #104e53;
+}
+
+.content > strong {
+    color: rgb(222, 12, 12);
+    font-family: arial;
+    font-size: 24px;
+}
+
+.content > p {
+    line-height: 20px;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+.content > button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #eee;
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #fff;
+    cursor: pointer;
+    float: right;
+    margin-top: -100px;
+    transition: 0.5s;
+}
+
+.content > button:hover {
+    background-color: #04dff0;
+    color: #fff;
+}
+
+.content > a {
+    text-decoration: none;
+    font-family: consolas;
+    font-size: 15px;
+    float: right;
+    margin-top: -10px;
+    transition: 0.5s;
+}
+
+.content > a:hover {
+    color:rgb(222, 12, 12);
+}
